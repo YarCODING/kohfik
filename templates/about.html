@@ -15,7 +15,8 @@
 <section class="sub-header">
     <nav>
         <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="logo"></a>
-        <div class="nav_links">
+        <div class="nav_links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="{{ url_for('index') }}">HOME</a></li>
                 <li><a href="{{ url_for('about') }}">ABOUT</a></li>
@@ -24,6 +25,7 @@
                 <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
             </ul>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
     <h1>About Us</h1>
 </section>
@@ -73,6 +75,22 @@
         <p>Made with <i class="fa-regular fa-heart"></i> by Yaroslav</p>
     </div>
 </section>
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
 
 </body>
 </html>
