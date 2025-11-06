@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOHFIK - about us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a808635cf.js" crossorigin="anonymous"></script>
+</head>
+
+<section class="sub-header">
+    <nav>
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="logo"></a>
+        <div class="nav_links">
+            <ul>
+                <li><a href="{{ url_for('index') }}">HOME</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a href="{{ url_for('menu') }}">MENU</a></li>
+                <li><a href="{{ url_for('blog') }}">BLOG</a></li>
+                <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>About Us</h1>
+            <p>
+                We create more than just a place — we create an experience. <br>
+
+                Our team believes that true inspiration starts with atmosphere.
+                Every detail — from the design to the people — is made to bring comfort, connection, and creativity together. <br>
+
+                We value simple things done with care: good taste, good company, and good energy. <br>
+                Here, every moment matters — whether you come to relax, work, or get inspired. <br>
+
+                Welcome to the space where ideas and people come to life. <br>
+            </p>
+            <a href="" class="hero-btn brown-btn">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+            <img src="/static/imgs/about.jpeg">
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We’re a small team of coffee enthusiasts who decided that life’s too short for bad espresso. <br>
+    Our mission? Keep you caffeinated enough to survive deadlines, meetings, and small talk. <br>
+    Everything we serve is made with care, curiosity, and a hint of existential dread.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+        <p>Made with <i class="fa-regular fa-heart"></i> by Yaroslav</p>
+    </div>
+</section>
+
+</body>
+</html>

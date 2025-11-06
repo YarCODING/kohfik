@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOHFIK - home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a808635cf.js" crossorigin="anonymous"></script>
+</head>
+
+<section class="header">
+    <nav>
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="logo"></a>
+        <div class="nav_links">
+            <ul>
+                <li><a href="{{ url_for('index') }}">HOME</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a href="{{ url_for('menu') }}">MENU</a></li>
+                <li><a href="{{ url_for('blog') }}">BLOG</a></li>
+                <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-box">
+        <h1>Not all heroes wear capes. Some brew coffee.</h1>
+        <p>The place where mornings start making sense. <br>
+            Our coffee’s strong enough to wake your inner genius (or at least keep your eyes open).
+            Fresh beans, homemade pastries, and vibes better than your Wi-Fi.
+        </p>
+        <a href="" class="hero-btn">Show Me the Coffee</a>
+        
+    </div>
+</section>
+
+
+
+<section class="menu">
+    <h1>Our menu</h1>
+    <p>We spent years perfecting these recipes so you can say, “Yeah, it’s pretty good.”</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Sweet Lies</h3>
+            <p>Our desserts won’t fix your life, but they’ll make you forget for a few bites.</p>
+        </div>
+
+        <div class="course-col">
+            <h3>Comfort Calories</h3>
+            <p>Warm pastries made with love, butter, and a total lack of regret.</p>
+        </div>
+            
+        <div class="course-col">
+            <h3>Little Moments of Sanity</h3>
+            <p>Take five minutes. Sip. Breathe. Pretend you’ve got everything under control.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="cafes">
+    <h1>Our global cafes</h1>
+    <p>We’ve opened a few cozy spots around the world — mostly because teleportation isn’t a thing yet.</p>
+
+    <div class="row">
+        <div class="cafes-col">
+            <img src="{{ url_for('static', filename='imgs/Tartu.jpg') }}">
+            <div class="layer">
+                <h3>TARTU</h3>
+            </div>
+        </div>
+        <div class="cafes-col">
+            <img src="{{ url_for('static', filename='imgs/Tallinn.jpeg') }}">
+            <div class="layer">
+                <h3>TALLINN</h3>
+            </div>
+        </div>
+        <div class="cafes-col">
+            <img src="{{ url_for('static', filename='imgs/Odessa.jpeg') }}">
+            <div class="layer">
+                <h3>ODESSA</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Cozy chairs, strong coffee, and Wi-Fi that actually works.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="{{ url_for('static', filename='imgs/wifi.png') }}">
+            <h3>Free Wi-Fi</h3>
+            <p>Fast enough to stream, scroll, and “work from café” convincingly.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="/static/imgs/pets.jpg">
+            <h3>Pets allowed</h3>
+            <p>Dogs, cats, emotional support lizards — all welcome (as long as they behave better than most humans).</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="/static/imgs/music.jpg">
+            <h3>Music</h3>
+            <p>Handpicked playlists to match your caffeine levels — from chill mornings to existential afternoons.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="reviews">
+    <h1>What Our Clients Says</h1>
+    <p>Real words from real people who were definitely <i>not</i> bribed with free croissants.</p>
+
+        <div class="reviews-col">
+            <img src="/static/imgs/user1.jpg">
+            <div>
+                <p>Finally, a place that understands my need for caffeine and emotional support pastries.</p>
+                <h3>Piia Ronkainen</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+
+        <div class="reviews-col">
+            <img src="/static/imgs/user2.jpg">
+            <div>
+                <p>The Wi-Fi’s fast enough to procrastinate in HD.</p>
+                <h3>Kevin Schulze</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="cta">
+    <h1>Take a break. You’ve earned it.</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We’re a small team of coffee enthusiasts who decided that life’s too short for bad espresso. <br>
+    Our mission? Keep you caffeinated enough to survive deadlines, meetings, and small talk. <br>
+    Everything we serve is made with care, curiosity, and a hint of existential dread.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i> 
+
+        <p>Made with <i class="fa-regular fa-heart"></i> by Yaroslav</p>
+    </div>
+</section>
+
+</body>
+</html>

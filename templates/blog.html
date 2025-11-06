@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOHFIK - blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a808635cf.js" crossorigin="anonymous"></script>
+</head>
+
+<section class="sub-header" id="blog-header">
+    <nav>
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="logo"></a>
+        <div class="nav_links">
+            <ul>
+                <li><a href="{{ url_for('index') }}">HOME</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a href="{{ url_for('menu') }}">MENU</a></li>
+                <li><a href="{{ url_for('blog') }}">BLOG</a></li>
+                <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Fresh Thoughts, Just Brewed</h1>
+</section>
+
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='imgs/coffee.jpeg') }}">
+            <h2>Fresh Thoughts, Just Brewed</h2>
+            <p>You know those people who wake up at 6 a.m., meditate, jog, journal, and conquer the world before breakfast? Yeah, we don’t know them either.
+                Here at Kohvik, we’ve mastered the subtle art of pretending to be busy while actually sipping our third cup of coffee and staring thoughtfully into the distance. It’s not laziness — it’s strategic energy conservation. We call it proactive relaxation.
+                Sometimes the best ideas come when you stop trying so hard. That’s why our tables are full of half-written notes, coffee rings, and people “working remotely” (which apparently means scrolling memes with a latte in hand).</p>
+            <br>
+            <p>Let’s face it: coffee isn’t just a drink anymore — it’s an identity.
+                We’ve seen friendships formed over cappuccinos, life decisions made over cold brew, and entire existential crises solved by an extra espresso shot. Every sip is a tiny “I got this” moment in an otherwise chaotic day.
+                At Kohvik, we don’t just serve caffeine — we serve a lifestyle, a mood, a mild sense of superiority. And if you happen to get inspired between your fourth refill and your fifth attempt at “working,” well, we’ll call that a success.</p>
+            <br>
+            <p>Every day starts the same: the quiet hiss of the espresso machine, the smell of freshly ground beans, and that one customer who’s already “had a morning.” We pretend we’re just making coffee, but deep down, we’re running a small emotional support center disguised as a café.
+                People come here for more than caffeine — they come for five minutes of peace before reality hits. Whether you’re writing your next novel, doomscrolling, or contemplating your life choices over a croissant, we’ve got your back (and your refill).
+                We like to think our café isn’t just a place — it’s a perfectly caffeinated pause button on the chaos outside.</p>
+            <br>
+            <p>Some of the best stories don’t happen in meeting rooms — they happen between sips. Overheard debates about oat milk superiority, sudden life advice from strangers, awkward first dates — our tables have seen it all.
+                We believe every cup carries a story. Some are short and sweet; others are messy and complicated (like our mocha machine on Mondays). But that’s the beauty of it — life brewed one cup at a time.
+                So next time you walk in, don’t just grab a coffee. Sit, listen, and let the noise of the world dissolve into background jazz. You might just find something worth remembering — or at least, worth another cup.</p>
+            
+
+
+
+            <div class="comment-box">
+
+                <h3>Leave a comment</h3>
+                
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" class="hero-btn brown-btn">POST COMMENT</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="blog-right">
+            <h3>Post categories</h3>
+            <div>
+                <span>Basic Coffee</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Cold Coffee</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Tea & Non-Coffee</span>
+                <span>87</span>
+            </div>
+            <div>
+                <span>Specialty Drinks</span>
+                <span>16</span>
+            </div>
+            <div>
+                <span>Fresh Juice</span>
+                <span>90</span>
+            </div>
+            <div>
+                <span>Bakery & Snacks</span>
+                <span>72</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We’re a small team of coffee enthusiasts who decided that life’s too short for bad espresso. <br>
+    Our mission? Keep you caffeinated enough to survive deadlines, meetings, and small talk. <br>
+    Everything we serve is made with care, curiosity, and a hint of existential dread.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+        <p>Made with <i class="fa-regular fa-heart"></i> by Yaroslav</p>
+    </div>
+</section>
+
+</body>
+</html>
