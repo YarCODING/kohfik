@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYX0PKC8KT"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+{% extends "layout.html" %}
 
-    gtag('config', 'G-TYX0PKC8KT');
-    </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOHFIK - home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5a808635cf.js" crossorigin="anonymous"></script>
-</head>
-
+{% block header %}
 <section class="header">
     <nav>
         <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="logo"></a>
@@ -48,9 +28,11 @@
         
     </div>
 </section>
+{% endblock header %}
 
 
 
+{% block content %}
 <section class="menu">
     <h1>Our menu</h1>
     <p>We spent years perfecting these recipes so you can say, “Yeah, it’s pretty good.”</p>
@@ -168,35 +150,4 @@
     <h1>Take a break. You’ve earned it.</h1>
     <a href="" class="hero-btn">CONTACT US</a>
 </section>
-
-<section class="footer">
-    <h4>About Us</h4>
-    <p>We’re a small team of coffee enthusiasts who decided that life’s too short for bad espresso. <br>
-    Our mission? Keep you caffeinated enough to survive deadlines, meetings, and small talk. <br>
-    Everything we serve is made with care, curiosity, and a hint of existential dread.</p>
-    <div class="icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i> 
-
-        <p>Made with <i class="fa-regular fa-heart"></i> by Yaroslav</p>
-    </div>
-</section>
-
-<script>
-
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-
-</script>
-
-
-</body>
-</html>
+{% endblock content %}
