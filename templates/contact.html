@@ -38,11 +38,24 @@
 <div class="contact-col">
 
     <form>
-        <input name="name" type="text" placeholder="Enter your name" required>
-        <input name="email" type="email" placeholder="Enter email address" required>
-        <input type="text" placeholder="Enter your favorite coffee" required>
-        <textarea name="comment" rows="8" placeholder="Message" required></textarea>
-        <button type="submit" class="hero-btn brown-btn">Send Message</button>
+        <input autocomplete="off" name="name" type="text" placeholder="Enter your name" required>
+                    <input autocomplete="off" name="email" type="email" placeholder="Enter email address" required>
+                    <select name="coffee" required>
+                        <option disabled selected value="">Choose your favorite coffee</option>
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Espresso">Espresso</option>
+                        <option value="Americano">Americano</option>
+                        <option value="Mocha">Mocha</option>
+                        <option value="Flat White">Flat White</option>
+                        <option value="Macchiato">Macchiato</option>
+                        <option value="Ristretto">Ristretto</option>
+                        <option value="Black">Black</option>
+                        <option value="Affogato">Affogato</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <textarea autocomplete="off" name="comment" rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn brown-btn">Send Message</button>
     </form>
 
 </div>

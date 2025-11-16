@@ -3,6 +3,8 @@ from flask import Flask, render_template, request
 
 site = Flask(__name__)
 
+# site.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:changeme@localhost/cafe'
+
 @site.route("/", methods=['GET'])
 def index():
     return render_template("index.html", title="home")
