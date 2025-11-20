@@ -1,9 +1,25 @@
 from flask import Flask, render_template, request
- 
+import psycopg2
+
 
 site = Flask(__name__)
 
-# site.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:changeme@localhost/cafe'
+conn = psycopg2.connect(
+        host="localhost",
+        database="cafe",
+        user='postgres',
+        password='changeme'
+        )
+cur = conn.cursor()
+
+
+query = """
+SELECT * FROM public.customer;
+"""
+cur.execute(query)
+print(cur.fetchall())
+conn.commit()
+
 
 @site.route("/", methods=['GET'])
 def index():
@@ -26,4 +42,5 @@ def contact():
     return render_template("contact.html", title="Contact Us")
 
 
-site.run(host='0.0.0.0', port=8000)
+if __name__ == "__main__":
+    site.run(host='0.0.0.0', port=8000)
